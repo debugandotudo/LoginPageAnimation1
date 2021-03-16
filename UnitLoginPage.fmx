@@ -2,19 +2,20 @@ object frmLoginPage: TfrmLoginPage
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 785
-  ClientWidth = 375
+  ClientHeight = 768
+  ClientWidth = 377
   Fill.Kind = Solid
   StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnShow = FormShow
   DesignerMasterStyle = 3
   object lay_background: TLayout
     Align = Contents
     Locked = True
-    Size.Width = 375.000000000000000000
-    Size.Height = 785.000000000000000000
+    Size.Width = 377.000000000000000000
+    Size.Height = 768.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object img_background: TImage
@@ -3273,7 +3274,7 @@ object frmLoginPage: TfrmLoginPage
           FileName = 'D:\Projetos Delphi\LoginPageAnimation\src\images\background.png'
         end>
       Align = Top
-      Size.Width = 375.000000000000000000
+      Size.Width = 377.000000000000000000
       Size.Height = 337.000000000000000000
       Size.PlatformDefault = False
       WrapMode = Stretch
@@ -3281,7 +3282,7 @@ object frmLoginPage: TfrmLoginPage
   end
   object lay_top: TLayout
     Align = Top
-    Size.Width = 375.000000000000000000
+    Size.Width = 377.000000000000000000
     Size.Height = 185.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
@@ -3404,12 +3405,12 @@ object frmLoginPage: TfrmLoginPage
       Align = Center
       Locked = True
       Margins.Bottom = 50.000000000000000000
-      Size.Width = 58.000000000000000000
-      Size.Height = 141.000000000000000000
+      Size.Width = 59.000000000000000000
+      Size.Height = 135.000000000000000000
       Size.PlatformDefault = False
       WrapMode = Stretch
     end
-    object Ima_clock: TImage
+    object Img_clock: TImage
       MultiResBitmap.Height = 58
       MultiResBitmap.Width = 58
       MultiResBitmap.LoadSize = 2
@@ -3457,7 +3458,7 @@ object frmLoginPage: TfrmLoginPage
       Align = Right
       Locked = True
       Margins.Right = 50.000000000000000000
-      Position.X = 273.000000000000000000
+      Position.X = 275.000000000000000000
       Size.Width = 52.000000000000000000
       Size.Height = 185.000000000000000000
       Size.PlatformDefault = False
@@ -3465,8 +3466,8 @@ object frmLoginPage: TfrmLoginPage
   end
   object lay_login: TLayout
     Align = Client
-    Size.Width = 375.000000000000000000
-    Size.Height = 600.000000000000000000
+    Size.Width = 377.000000000000000000
+    Size.Height = 583.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     object lay_bottom: TLayout
@@ -3476,13 +3477,13 @@ object frmLoginPage: TfrmLoginPage
       Margins.Right = 20.000000000000000000
       Position.X = 20.000000000000000000
       Position.Y = 199.000000000000000000
-      Size.Width = 335.000000000000000000
+      Size.Width = 337.000000000000000000
       Size.Height = 146.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       object lay_edts: TLayout
         Align = Top
-        Size.Width = 335.000000000000000000
+        Size.Width = 337.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -3491,7 +3492,7 @@ object frmLoginPage: TfrmLoginPage
           Corners = [BottomLeft, BottomRight]
           Fill.Color = claWhite
           Position.Y = 70.000000000000000000
-          Size.Width = 335.000000000000000000
+          Size.Width = 337.000000000000000000
           Size.Height = 70.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
@@ -3499,13 +3500,15 @@ object frmLoginPage: TfrmLoginPage
           YRadius = 10.000000000000000000
           object edt_password: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Center
+            Align = VertCenter
             StyleLookup = 'edt_emailStyle1'
             TabOrder = 0
             TextSettings.Font.Size = 14.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 300.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 19.000000000000000000
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 317.000000000000000000
             Size.Height = 32.000000000000000000
             Size.PlatformDefault = False
             TextPrompt = 'Password'
@@ -3516,7 +3519,7 @@ object frmLoginPage: TfrmLoginPage
           Align = Top
           Corners = [TopLeft, TopRight]
           Fill.Color = claWhite
-          Size.Width = 335.000000000000000000
+          Size.Width = 337.000000000000000000
           Size.Height = 70.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
@@ -3524,11 +3527,15 @@ object frmLoginPage: TfrmLoginPage
           YRadius = 10.000000000000000000
           object edt_email: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Center
+            Align = VertCenter
             StyleLookup = 'edt_emailStyle1'
             TabOrder = 0
             TextSettings.Font.Size = 14.000000000000000000
-            Size.Width = 300.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 18.000000000000000000
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 317.000000000000000000
             Size.Height = 32.000000000000000000
             Size.PlatformDefault = False
             TextPrompt = 'Email or Phone  number'
@@ -3538,11 +3545,11 @@ object frmLoginPage: TfrmLoginPage
             Align = Bottom
             LineType = Diagonal
             Opacity = 0.100000001490116100
-            Margins.Left = 10.000000000000000000
-            Margins.Right = 10.000000000000000000
-            Position.X = 10.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
             Position.Y = 69.000000000000000000
-            Size.Width = 315.000000000000000000
+            Size.Width = 327.000000000000000000
             Size.Height = 1.000000000000000000
             Size.PlatformDefault = False
           end
@@ -3563,15 +3570,15 @@ object frmLoginPage: TfrmLoginPage
       Margins.Right = 20.000000000000000000
       Position.X = 20.000000000000000000
       Position.Y = 385.000000000000000000
-      Size.Width = 335.000000000000000000
-      Size.Height = 152.000000000000000000
+      Size.Width = 337.000000000000000000
+      Size.Height = 136.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
       object rect_btn_login: TRectangle
         Align = Top
         Fill.Color = xFF7277E5
         Opacity = 0.800000011920929000
-        Size.Width = 335.000000000000000000
+        Size.Width = 337.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
@@ -3581,7 +3588,7 @@ object frmLoginPage: TfrmLoginPage
           Align = Client
           StyledSettings = [Family]
           Locked = True
-          Size.Width = 335.000000000000000000
+          Size.Width = 337.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.Size = 14.000000000000000000
@@ -3597,8 +3604,8 @@ object frmLoginPage: TfrmLoginPage
         StyledSettings = [Family]
         HitTest = True
         Opacity = 0.699999988079071000
-        Position.Y = 112.000000000000000000
-        Size.Width = 335.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 337.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
         TextSettings.Font.Size = 14.000000000000000000
@@ -3611,7 +3618,7 @@ object frmLoginPage: TfrmLoginPage
     object Label1: TLabel
       Align = Top
       StyledSettings = [Family]
-      Size.Width = 375.000000000000000000
+      Size.Width = 377.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 36.000000000000000000
