@@ -2,7 +2,7 @@ object frmLoginPage: TfrmLoginPage
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 768
+  ClientHeight = 713
   ClientWidth = 377
   Fill.Kind = Solid
   StyleBook = StyleBook1
@@ -15,7 +15,7 @@ object frmLoginPage: TfrmLoginPage
     Align = Contents
     Locked = True
     Size.Width = 377.000000000000000000
-    Size.Height = 768.000000000000000000
+    Size.Height = 713.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object img_background: TImage
@@ -3465,9 +3465,10 @@ object frmLoginPage: TfrmLoginPage
     end
   end
   object lay_login: TLayout
-    Align = Client
+    Align = Bottom
+    Position.Y = 181.000000000000000000
     Size.Width = 377.000000000000000000
-    Size.Height = 583.000000000000000000
+    Size.Height = 532.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     object lay_bottom: TLayout
