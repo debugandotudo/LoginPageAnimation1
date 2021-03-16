@@ -3,12 +3,12 @@ program LoginPageAnimation;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  UnitLoginPage in 'UnitLoginPage.pas' {Form1};
+  UnitLoginPage in 'UnitLoginPage.pas' {frmLoginPage};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmLoginPage, frmLoginPage);
   Application.Run;
 end.

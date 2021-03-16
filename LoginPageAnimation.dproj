@@ -188,7 +188,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="UnitLoginPage.pas">
-            <Form>Form1</Form>
+            <Form>frmLoginPage</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
